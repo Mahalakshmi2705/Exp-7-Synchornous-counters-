@@ -65,105 +65,69 @@ Procedure
 
 PROGRAM FOR UP COUNTER :
 
-
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-
-Developed by:MAHALAKSHMI S
-
-RegisterNumber: 22008601 
+    Program for flipflops  and verify its truth table in quartus using Verilog programming.
+    Developed by:MAHALAKSHMI S
+    RegisterNumber: 22008601 
 
 
 
-module de06(input clk,input reset,output[0:3]counter);
-
-reg[0:3]counter_down;
-
-always@(posedge clk or posedge reset)
-
-begin
-
-if (reset)
-
-counter_down<=4'd0;
-
-else 
-
-counter_down<=counter_down-4'd1;
-
-end
-
-assign counter=counter_down;
-
-endmodule
+    module de06(input clk,input reset,output[0:3]counter);
+    reg[0:3]counter_down;
+    always@(posedge clk or posedge reset)
+    begin
+    if (reset)
+    counter_down<=4'd0;
+    else 
+    counter_down<=counter_down-4'd1;
+    end
+    assign counter=counter_down;
+    endmodule
 
 
 RLT FOR UP COUNTER:
 
-
 ![Screenshot (76)](https://user-images.githubusercontent.com/122199968/213877993-e8683ef1-ebd6-4f00-b741-f52f0337aff5.png)
-
 
 TIMING DIAGRAM FOR UP COUNTER:
 
-
 ![Screenshot (78)](https://user-images.githubusercontent.com/122199968/213878267-879e7f45-378b-4e56-9d5b-52d280ab7adf.png)
 
-
 TRUTH TABLE:
-
 
 ![Screenshot (79)](https://user-images.githubusercontent.com/122199968/213878326-c7f59b2b-7ee7-4c49-9ee7-2b730511a85e.png)
 
 
-
-
 PROGRAM FOR DOWN COUNTER:
 
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-
-Developed by: MAHALAKSHMI S
-
-RegisterNumber: 22008601
+    Program for flipflops  and verify its truth table in quartus using Verilog programming.
+    Developed by: MAHALAKSHMI S
+    RegisterNumber: 22008601
 
 
-module de06(input clk,input reset,output[0:3]counter);
-
-reg[0:3]counter_down;
-
-always@(posedge clk or posedge reset)
-
-begin
-
-if (reset)
-
-counter_down<=4'd0;
-
-else
-
-counter_down<=counter_down-4'd1;
-
-end
-
-assign counter=counter_down;
-
-endmodule
+    module de06(input clk,input reset,output[0:3]counter);
+    reg[0:3]counter_down;
+    always@(posedge clk or posedge reset)
+    begin
+    if (reset)
+    counter_down<=4'd0;
+    else
+    counter_down<=counter_down-4'd1;
+    end
+    assign counter=counter_down;
+    endmodule
 
 
 RLT FOR DOWN COUNTER:
 
-
 ![Screenshot (80)](https://user-images.githubusercontent.com/122199968/213878450-20ea8b0c-a480-4c45-bd22-53bbfc3282cb.png)
-
 
 TIMING DIAGRAM FOR DOWN COUNTER:
 
 ![Screenshot (82)](https://user-images.githubusercontent.com/122199968/213878578-6d76b15c-7d22-4711-b6e1-00ee683edcf9.png)
 
-
 TRUTH TABLE:
 
 ![Screenshot (83)](https://user-images.githubusercontent.com/122199968/213878645-589888ef-8fb9-49c9-b402-f03b65076573.png)
-
 
 RESULTS:
 
